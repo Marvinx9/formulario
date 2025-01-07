@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Formulários</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
+  <link rel='stylesheet' href='style.css'>
+  <title>Login form</title>
 </head>
-
 <body>
-  <form>
-    <div>
-      <label for="nome">Nome</label>
-        <input type="text" size="30" required pattern="[a-zA-Z]{2,10}" title="nome inválido">
+  <div class="form-container">
+    <div class="form-content">
+      <img src="img/sitemark.svg" alt="logo of form" width="200px" class="logo-fm">
+      <form class="form-login">
+        <h2>Access your account<h2>
+        <div class="form-field">
+          <label for="login">CPF or E-mail</label>
+            <input type="text" id="login" placeholder="Enter your CPF or E-mail" required>
+        </div>
+        <div class="form-field">
+          <div class="password-field">
+            <label for="password">Password</label>
+            <a href="#">forgot password</a>
+          </div>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit">Login</button>
+        <div class="divisor">
+          <hr>
+          <span>or</span>
+          <hr>
+        </div>
+        <a href=""><img src="./img/google.svg" alt="google icons" class="google-login">Login with google</a>
+      </form>
+      <p>Don't have an account? <a href="#">create account</a></p>
     </div>
-  <br>
-  <label for="">Telefone</label>
-  <input type="tel" placeholder="(99)99999-9999" required>
-  <br>
-  <br>
-  <button type="submit">Enviar</button>
-  <button type="reset">Limpar</button>
-  </form>  
+  </div>
 </body>
-
 </html>
