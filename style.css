@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -19,7 +20,7 @@ body {
 }
 
 .logo-fm {
-  margin-bottom: 25px;
+  margin-bottom: -10px;
 }
 
 .form-login {
@@ -29,12 +30,13 @@ body {
   background-color: #FFF;
   border-radius: 4px;
   border: solid 1px #b6b6b69a;
+  padding: 20px 40px;
+  width: 100%;
 }
 
 .form-login h2 {
   margin-top: 0;
   font-size: 1.2rem;
-  text-align: center;
   font-weight: 500;
 }
 
@@ -42,13 +44,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-left: 20px;
+  width: 100%;
 }
 
 .form-field input {
   height: 35px;
-  width: 350px;
-  margin: 0px 25px 20px 25px;
   background-color: #f8fafc;
   border: solid 1px #b6b6b6be;
   border-radius: 4px;
@@ -62,6 +62,10 @@ body {
 .password-field {
   display: flex;
   justify-content: space-between;
+}
+
+.password-field label {
+  text-align: center;
 }
 
 .password-field a {
@@ -97,12 +101,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
   border: solid 1px #b6b6b6be;
   border-radius: 4px;
   color: black;
-  gap: 5px;
   text-decoration: none;
+  gap: 12px;
   padding: 5px;
 }
 
